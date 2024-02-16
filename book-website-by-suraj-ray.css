@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+
+}
+
+a:hover {
+    color: orangered;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Navigation Tabs*/
+
+nav {
+    padding-top: 0.5rem;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.486);
+}
+
+nav .logo {
+    margin-left: 7px;
+    float: left;
+}
+
+/*Heading*/
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.head {
+    padding: 3rem;
+    text-align: center;
+    width: 260px;
+}
+
+h1,
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;
+}
+
+h5 {
+    text-align: right;
+}
+
+/*Category Tab*/
+
+h2 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    div {
+        margin: 1rem;
+        padding: 1rem;
+        height: 30vh;
+        padding-left: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+h4 {
+    padding: 2rem;
+    text-align: center;
+}
+
+fieldset {
+    padding-bottom: 3rem;
+    margin: 1rem;
+}
+
+/*Store Tag  and all products divs*/
+
+.store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 2rem;
+
+    .product {
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+
+    img {
+        object-fit: contain;
+
+    }
+
+    button {
+        margin: 5px 7px;
+        padding: 5px 0;
+    }
+
+    button:hover {
+        border: orangered solid 2px;
+        color: orangered;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: blue;
+        padding: 5px 5px;
+
+        div {
+            flex-direction: row;
+            text-wrap: wrap;
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+#manga,
+#ncert,
+#joke,
+#english,
+#programming,
+#comic,
+#adult {
+    padding-top: 0;
+}
+
+/*Subscription Tab*/
+
+.subscribed {
+    column-gap: 2rem;
+    line-height: 2rem;
+
+    a {
+        color: blue;
+    }
+
+    a:hover {
+        color: orangered;
+    }
+}
+
+/*About Tab*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 13px;
+}
+
+.go-home {
+    margin: 2rem 0;
+    background-color: darkslategrey;
+}
+
+.copyright {
+    background: #333;
+    padding: 1rem;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* Log in & Sign up Page - 2nd Page */
+
+#sign-up-page {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Logo */
+    header {
+        margin-top: 0;
+    }
+}
+
+#log-in-page {
+    margin-left: 66px;
+    padding: 5px;
+    border: rgb(161, 160, 160) solid 2px;
+    border-radius: 8px;
+    height: 260px;
+    width: 210px;
+    overflow: hidden;
+}
+
+/* Log in and sign up form switch buttons */
+
+#log-in-btn,
+#sign-up-btn {
+    padding: 7px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 45%;
+    margin: 3px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#log-in-btn:hover,
+#sign-up-btn:hover,
+#log-in-page form button:hover {
+    border: 2px solid orangered;
+}
+
+#log-in-page form {
+    margin-top: 20px;
+}
+
+/* Input name and password boxes */
+#log-in-page input {
+    margin: 7px;
+    height: 30px;
+}
+
+/* forgot password link */
+#log-in-page p {
+    font-size: 11px;
+    text-align: right;
+}
+
+/* Log in and sign up green main buttons */
+#log-in-page form button {
+    width: 87%;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: rgb(16, 232, 16);
+}
+
+
+/* Book Detail Product card Page  - 3rd Page */
+
+#book-details-nav {
+    position: inherit;
+}
+
+#book-details {
+    margin-top: 50px;
+    display: flex;
+    background: #fff;
+    height: 50%;
+    line-height: 1.2rem;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    h3 {
+        color: orangered;
+        margin: 10px;
+        text-align: left;
+    }
+
+    p {
+        color: black;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    .book-discription {
+        font-size: 14px;
+    }
+
+    select,
+    button,
+    input {
+        width: 100%;
+        height: 30px;
+        margin: 10px 3px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    select:hover,
+    button:hover,
+    input:hover {
+        border: 2px solid orangered;
+    }
+
+    div:nth-child(2) i {
+        color: goldenrod;
+    }
+
+    p:nth-child(even) {
+        font-weight: bold;
+    }
+
+    .order-time,
+    .price {
+        color: rgb(6, 120, 6);
+    }
+
+    .price {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Book Size and selling information */
+
+.book-size-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+hr {
+    margin: 10px 3px;
+}
+
+/* Colouring the Buttons */
+
+.add-to-cart {
+    background: orange;
+}
+
+.buy-now {
+    background: rgb(16, 232, 16);
+}
+
+span {
+    color: rgb(21, 124, 124);
+}
+
+
+/*Responsiveness*/
+
+/* Responsive in Tab mode */
+
+@media screen and (min-width : 600px) and (max-width: 1023px) {
+
+    .category,
+    .store {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .store {
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            div {
+                display: flex;
+                margin: 0 0;
+            }
+        }
+
+        .product {
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+    }
+}
+
+/* Responsive in Portrait or Mobile mode */
+
+@media screen and (orientation : portrait) {
+
+    nav {
+        font-size: 10px;
+    }
+
+    .category {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+        place-content: center;
+    }
+
+    .store {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Book Details Page Responsiveness */
+    #book-details {
+        flex-direction: column;
+
+        img {
+            height: 40%;
+            width: 40%;
+        }
+    }
+}
